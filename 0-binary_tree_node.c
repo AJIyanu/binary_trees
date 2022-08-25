@@ -31,8 +31,8 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	ptr->n = value;
 	ptr->left = NULL;
 	ptr->right = NULL;
-	}
+    
 	printf("Node Created\n");
-	return (parent);
+	return (ptr);
 
 }
