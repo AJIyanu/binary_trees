@@ -12,16 +12,16 @@
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-    binary_tree_t *ptr = NULL;
-
-    if (parent == NULL)
-        ptr = parent;
-    else if (parent->left == NULL)
-        ptr = parent->left;
-    else if (parent->right == NULL)
-        ptr = parent->right;
-    else
-        return (NULL);
+	binary_tree_t *ptr = NULL;
+	
+	if (parent == NULL)
+		ptr = parent;
+	else if (parent->left == NULL)
+		ptr = parent->left;
+	else if (parent->right == NULL)
+		ptr = parent->right;
+	else
+		return (NULL);
 
 	printf("parent is null\n");
 	ptr = malloc(sizeof(binary_tree_t));
