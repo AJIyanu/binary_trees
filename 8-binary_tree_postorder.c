@@ -9,7 +9,7 @@
  * Return: nothing just prints
  */
 
-void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
 	const binary_tree_t *ptr = tree;
 
