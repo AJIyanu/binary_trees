@@ -14,7 +14,7 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 	const binary_tree_t *ptr = tree;
 
 	if (ptr == NULL || func == NULL)
-		EXIT_SUCCESS;
+		return;
 	if (ptr != NULL)
 		func(ptr->n);
 	if (ptr->left != NULL)
