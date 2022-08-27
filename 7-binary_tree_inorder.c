@@ -15,7 +15,7 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 
 	if (ptr == NULL || func == NULL)
 		return;
-	if (ptr != NULL)
+	if (ptr->left != NULL)
 		binary_tree_inorder(ptr->left, func);
 	func(ptr->n);
 	if (ptr->right != NULL)
