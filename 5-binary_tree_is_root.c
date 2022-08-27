@@ -4,7 +4,7 @@
 /**
  * binary_tree_is_root - check root
  * @node: node to check
- * 
+ *
  * Return: 0 if node is null or !root else 1
  */
 
