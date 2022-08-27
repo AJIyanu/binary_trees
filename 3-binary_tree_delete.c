@@ -12,16 +12,12 @@ void binary_tree_delete(binary_tree_t *tree)
 {
 	binary_tree_t *ptr = tree;
 
-	if (ptr == NULL)
-		EXIT_SUCCESS;
-	if (ptr->left == NULL)
+	if (ptr != NULL)
 	{
-		if (ptr->right == NULL)
-			free(ptr);
-		else
+		if (ptr->left != NULL)
+			binary_tree_delete(ptr->left);
+		if (ptr->right != NULL)
 			binary_tree_delete(ptr->right);
+		free(ptr);
 	}
-	else
-		binary_tree_delete(ptr->left);
-	free(ptr);
 }
