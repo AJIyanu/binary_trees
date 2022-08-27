@@ -22,7 +22,10 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 	ptr->right = NULL;
 
 	if (parent == NULL)
-		return (ptr);
+	{
+		free(ptr);
+		return (NULl);
+	}
 	if (parent->right == NULL)
 		parent->right = ptr;
 	else
